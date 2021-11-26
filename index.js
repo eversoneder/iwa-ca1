@@ -10,7 +10,7 @@ const express = require('express'), //allows http request response, defines rout
 const router = express(),
       server = http.createServer(router);
 
-router.use(express.static(path.resolve(_dirname,'views'))); //serve static content from 'views' folder
+router.use(express.static(path.resolve(__dirname,'views'))); //serve static content from 'views' folder
 
 router.get('/', function(req, res){
 
