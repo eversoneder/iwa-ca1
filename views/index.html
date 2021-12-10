@@ -37,7 +37,7 @@
                     <p class="lead">Select your dishes from the menu below.</p>
                 </div>
                 <div id="results" class="col-lg-8 order-2 mb-5"></div>
-                <div id="results" class="col-lg-4 order-1 mb-2">
+                <div id="results" class="col-lg-4 order-1 mb-3">
                     <form enctype="application/json" action="/post/json" method="post">
                         <div class="form-group">
                             <select class="form-control" name="sec_n">
@@ -47,6 +47,9 @@
                                 <option value="3">Lunch</option>
                                 <option value="4">Dinner</option>
                             </select>
+                            <input class="form-control mt-3" type="text" name="item" placeholder="Item">
+                            <input class="form-control mt-3" type="text" name="price" placeholder="Price">
+                            <button type="submit" class="btn btn-primary btn-block mt-3">Submit</button>
                         </div>
                     </form>
                     <p>This is our Menu</p>
