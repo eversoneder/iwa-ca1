@@ -40,7 +40,7 @@
                 <div id="results" class="col-lg-4 order-1 mb-3">
                     <form enctype="application/json" action="/post/json" method="post">
                         <div class="form-group">
-                            <select class="form-control" name="sec_n">
+                            <select id="section" class="form-control" name="sec_n">
                                 <option value="0">Drinks</option>
                                 <option value="1">Side Dishes</option>
                                 <option value="2">Breakfast</option>
@@ -49,10 +49,12 @@
                             </select>
                             <input class="form-control mt-3" type="text" name="item" placeholder="Item">
                             <input class="form-control mt-3" type="text" name="price" placeholder="Price">
-                            <div class=-grid gap-2></div>
-                            <button type="submit" class="btn btn-primary btn-block mt-3">Submit</button>
+                            
                         </div>
                     </form>
+                    <div class="d-grid gap-2">
+                        <button id="append" class="btn btn-primary btn-block mt-3">Submit</button>
+                    </div>
                     <p>This is our Menu</p>
                 </div>
             </div>

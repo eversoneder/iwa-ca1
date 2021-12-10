@@ -11,6 +11,8 @@ const   router = express(), //Instantiating Express
 
 router.use(express.static(path.resolve(__dirname,'views'))); //Serving static content from "views" folder
 
+router.use(express.json());
+
 function XMLtoJSON(filename, cb){
     let filepath = path.normalize(path.join(__dirname, filename));
     fs.readFile(filepath, 'utf8', function(err, xmlStr){
@@ -50,6 +52,8 @@ router.get('/', function(req, res) {
 
 router.post('/post/json', function(req, res){
 
+console.log(req.body);
+
     function appendJSON(obj){
 
         console.log(obj)
@@ -65,6 +69,8 @@ router.post('/post/json', function(req, res){
             });
         });
     };
+
+    appendJSON(req.body);
 
 });
 
