@@ -14,7 +14,6 @@ function draw_table(){
     $.getHTMLuncached("/get/html");
 }
 
-
 function append(){
     $.ajax({
         type: "POST",
@@ -24,16 +23,19 @@ function append(){
         data: '{"sec_n": "' + $("#section").val() + '", "item":"' + $("#item").val() + '", "price":"' + $("#price").val() + '"}',
         async: false,
         success: setTimeout(draw_table, 1000)
-    })
+    });
 };
 
 function select_row(){
     $("#menuTable tbody tr[id]").click(function(){
         $(".selected").removeClass("selected");
         $(this).addClass("selected");
-    })
+        var section = $(this).prevAll("tr").children("rd[colspan='3']").length-1;
+        var entry = $(this).attr("id") -1;
+        delete_row[section, entry];
+    });
 }
 
 $(document).ready(function(){
     draw_table();
-})
+});
