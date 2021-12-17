@@ -29,7 +29,7 @@ function JStoXML (filename, obj, cb){
     fs.writeFile(filepath, xml, cb);
 }
 
-router.get('/', function(req, res) {
+router.get('/get/html', function(req, res) {
 
     res.writeHead(200, {'Content-Type' : 'text/html'}); //Tell the user that the resource exists and which type that is
 
