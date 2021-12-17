@@ -27,6 +27,12 @@ function append(){
     })
 };
 
+function select_row(){
+    $("#menuTable tbody tr[id]").click(function(){
+        $(".selected").removeClass("selected");
+        $(this).addClass("selected");
+    })
+}
 
 $(document).ready(function(){
     draw_table();
