@@ -14,24 +14,19 @@ function draw_table(){
     $.getHTMLuncached("/get/html");
 }
 
+
 function append(){
-    
-    $ajax({
+    $.ajax({
         type: "POST",
-        url: "/post/json",
-        datatype: 'json',
+        url: '/post/json',
+        dataType: 'json',
         contentType: 'application/json',
-        data: 
-        {
-            "sec_n": $("#section").val(),
-            "item": $("#item").val(),
-            "price": $("#price").val()
-        },
+        data: '{"sec_n": "' + $("#section").val() + '", "item":"' + $("#item").val() + '", "price":"' + $("#price").val() + '"}',
         async: false,
-        success: draw_table()
+        success: setTimeout(draw_table, 1000)
     })
-        // alert($("#section").val());
 };
+
 
 $(document).ready(function(){
     draw_table();
