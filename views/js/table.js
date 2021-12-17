@@ -36,6 +36,25 @@ function select_row(){
     });
 }
 
+function delete_row(sec, entry){
+    $("delete").click(function(){
+
+        $.ajax(
+            {
+                url: "/post/delete",
+                type: "POST",
+                data:
+                {
+                    section: section,
+                    entry: entry
+                },
+                cache: false,
+                success: setTimeout(draw_Table, 1000)
+            }
+        )
+    })
+};
+
 $(document).ready(function(){
     draw_table();
 });
