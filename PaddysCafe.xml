@@ -1,73 +1,81 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <menu>
-    <section name="Drinks">
+    <section name="Facial">
         <entry>
-            <item>Coke</item>
-            <price>2.50</price>
+            <item>Deep Cleansing Facial 30min</item>
+            <price>20</price>
         </entry>
         <entry>
-            <item>Vodka</item>
-            <price>15</price>
+            <item>Bio-Clean System 60min</item>
+            <price>35</price>
         </entry>
-        <entry vegetarian="true">
-            <item>Kombucha</item>
-            <price>2.0</price>
+        <entry>
+            <item>Bio-Clean System + Gommage 75min</item>
+            <price>40</price>
         </entry>        
     </section>
-    <section name="Side Dishes">
+    <section name="Waxing">
         <entry>
-            <item>Potato Salad</item>
-            <price>4.95</price>
-        </entry>
-        <entry>
-            <item>Chips</item>
-            <price>4.50</price>
-        </entry>
-        <entry vegetarian="true">
-            <item>Rice</item>
-            <price>4.0</price>
-        </entry>        
-    </section>
-    <section name="Breakfast">
-        <entry>
-            <item>Eggs Benedict</item>
-            <price>12.99</price>
-        </entry>
-        <entry>
-            <item>Poached Eggs</item>
+            <item>Upper Lip Wax</item>
             <price>8</price>
         </entry>
-        <entry vegetarian="true">
-            <item>FrenchToast</item>
-            <price>2.0</price>
-        </entry>        
-    </section>
-    <section name="Lunch">
         <entry>
-            <item>Grilled Chicken Sadnwich</item>
-            <price>7.50</price>
+            <item>Underarm Wax</item>
+            <price>12</price>
         </entry>
         <entry>
-            <item>Soup of the Day</item>
-            <price>6</price>
+            <item>Full Leg Wax</item>
+            <price>25</price>
         </entry>
-        <entry vegetarian="true">
-            <item>Falafel</item>
+        <entry>
+            <item>Bikini Wax</item>
             <price>10</price>
+        </entry>
+        <entry>
+            <item>Brazilian Wax</item>
+            <price>25</price>
         </entry>        
     </section>
-    <section name="Dinner">
+    <section name="Eyebrow">
         <entry>
-            <item>Ribeye Steak</item>
-            <price>19.99</price>
+            <item>Eyebrow Design</item>
+            <price>12</price>
         </entry>
         <entry>
-            <item>Sushi</item>
-            <price>15</price>
+            <item>Eyebrow Tint</item>
+            <price>10</price>
         </entry>
-        <entry vegetarian="true">
-            <item>Shahshuka</item>
-            <price>15</price>
+        <entry>
+            <item>Eyebrow Design + Tint</item>
+            <price>20</price>
+        </entry>        
+    </section>
+    <section name="Eyelash">
+        <entry>
+            <item>Eyelash Perm</item>
+            <price>30</price>
+        </entry>
+        <entry>
+            <item>Eyelash Tint</item>
+            <price>12</price>
+        </entry>
+        <entry>
+            <item>Eyelash Perm + Tint</item>
+            <price>35</price>
+        </entry>        
+    </section>
+    <section name="Massages">
+        <entry>
+            <item>Liporedux Massage/Area</item>
+            <price>40</price>
+        </entry>
+        <entry>
+            <item>Modeling Massage 60min</item>
+            <price>60</price>
+        </entry>
+        <entry>
+            <item>Lymphatic Drainage 60min</item>
+            <price>50</price>
         </entry>        
     </section>
 </menu>
