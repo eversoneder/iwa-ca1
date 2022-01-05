@@ -31,24 +31,22 @@ function select_row(){
     $("#menuTable tbody tr[id]").click(function(){
         $(".selected").removeClass("selected");
         $(this).addClass("selected");
-        var section = $(this).prevAll("tr").children("rd[colspan='3']").length-1;
+        var section = $(this).prevAll("tr").children("td[colspan='3']").length-1;
         var entry = $(this).attr("id") -1;
-        delete_row[section, entry];
+        delete_row(section, entry);
     });
 }
 
 function delete_row(section, entry){
-    $("delete").click(function(){
+    $("#delete").click(function(){
 
         $.ajax(
             {
                 url: "/post/delete",
                 type: "POST",
-                data:
-                {
-                    section: section,
-                    entry: entry
-                },
+                dataType: 'json',
+                contentType: 'application/json',
+                data: '{"sec": "' + sec + '", "ent": "' + ent + '"}',
                 cache: false,
                 success: setTimeout(draw_Table, 1000)
             }
