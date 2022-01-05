@@ -56,7 +56,7 @@ console.log(req.body);
 
     function appendJSON(obj){
 
-        console.log(JSON.stringify(obj, null, " "))
+        console.log(JSON.stringify(obj, null, " "));
 
         XMLtoJSON('PaddysCafe.xml', function (err, result){
             if (err) throw (err);
@@ -84,7 +84,7 @@ router.post('/post/delete', function(req, res){
         XMLtoJSON('PaddysCafe.xml', function(err, result){
             if(err) throw(err);
 
-            delete result.menu.section[obj.section].entry[obj.entry];
+            delete result.menu.section[obj.sec].entry[obj.entry];
 
             JSONtoXML('PaddysCafe.xml', result, function(err){
                 if (err) throw (err);

@@ -46,7 +46,7 @@ function delete_row(section, entry){
                 type: "POST",
                 dataType: 'json',
                 contentType: 'application/json',
-                data: '{"sec": "' + sec + '", "ent": "' + ent + '"}',
+                data: '{"section": "' + section + '", "entry": "' + entry + '"}',
                 cache: false,
                 success: setTimeout(draw_table, 1000)
             }
