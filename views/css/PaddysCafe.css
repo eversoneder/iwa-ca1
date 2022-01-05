@@ -6,7 +6,7 @@ html {
 body {
 /* Margin bottom by footer height */
 margin-bottom: 60px;
-background-color:  #fff9e4;
+background-color:  #ffdfee;
 }
 
 .footer {
@@ -23,15 +23,17 @@ table, th, td {
     border-collapse: collapse;
     border: 1px solid black;
     text-align: center;
+    background-color:  rgb(255, 255, 255, 0.3);
 }
 
 table {
     border-collapse: collapse;
     width:100%;
+    border-radius:3px;
 }
 
 td, th {
-    border: 1px solid #ced4da;
+    border: 1px solid #b28ab6;
     padding: 0.5rem;
     text-align: left;
 }
