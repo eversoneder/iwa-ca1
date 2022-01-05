@@ -32,14 +32,14 @@
         </nav>
         <!-- Page content-->
         <div class="container">
-            <div class=row>
+            <div class="row">
                 <div class="text-center mt-5">
                     <h1>Welcome to Jessica Beauty</h1>
                     <p class="lead">Select any treatment from the menu below.</p>
                 </div>
                 <div id="results" class="col-lg-8 order-2 mb-5"></div>
-                <div id="menu" class="col-lg-4 order-1 mb-3">
-                    <form enctype="application/json" action="/post/json" method="post">
+                <div class="col-lg-4 order-1 mb-3">
+                    <form>
                         <div class="form-group">
                             <select id="section" class="form-control" name="sec_n">
                                 <option value="0">Facial</option>
@@ -48,8 +48,8 @@
                                 <option value="3">Eyelash</option>
                                 <option value="4">Massages</option>
                             </select>
-                            <input id="item" class="form-control mt-3" type="text" name="item" placeholder="Item">
-                            <input id="item" class="form-control mt-3" type="text" name="price" placeholder="Price">
+                            <input id="item" class="form-control mt-3" type="text" name="item" placeholder="Item"/>
+                            <input id="price" class="form-control mt-3" type="text" name="price" placeholder="Price"/>
                             
                         </div>
                     </form>
