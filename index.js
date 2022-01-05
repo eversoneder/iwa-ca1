@@ -19,7 +19,7 @@ function XMLtoJSON(filename, cb){
         if(err) throw (err);
         xml2js.parseString(xmlStr, {}, cb);
     });
-};
+}
 
 function JSONtoXML (filename, obj, cb){
     let filepath = path.normalize(path.join(__dirname, filename));
@@ -56,7 +56,7 @@ console.log(req.body);
 
     function appendJSON(obj){
 
-        console.log(JSON.stringify(obj, null, " "));
+        console.log(JSON.stringify(obj, null, " "))
 
         XMLtoJSON('PaddysCafe.xml', function (err, result){
             if (err) throw (err);
