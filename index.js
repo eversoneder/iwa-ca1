@@ -17,11 +17,11 @@ function XMLtoJSON(filename, cb){
     let filepath = path.normalize(path.join(__dirname, filename));
     fs.readFile(filepath, 'utf8', function(err, xmlStr){
         if(err) throw (err);
-        xml2js.parseString(smlStr, {}, cb);
+        xml2js.parseString(xmlStr, {}, cb);
     });
 };
 
-function JStoXML (filename, obj, cb){
+function JSONtoXML (filename, obj, cb){
     let filepath = path.normalize(path.join(__dirname, filename));
     let builder = new xml2js.Builder();
     let xml = builder.buildObject(obj);
@@ -56,7 +56,7 @@ console.log(req.body);
 
     function appendJSON(obj){
 
-        console.log(obj)
+        console.log(JSON.stringify(obj, null, " "));
 
         XMLtoJSON('PaddysCafe.xml', function (err, result){
             if (err) throw (err);
@@ -71,6 +71,7 @@ console.log(req.body);
     };
 
     appendJSON(req.body);
+    res.redirect('back');
 
 });
 

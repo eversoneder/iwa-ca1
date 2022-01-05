@@ -37,7 +37,7 @@ function select_row(){
     });
 }
 
-function delete_row(sec, entry){
+function delete_row(section, entry){
     $("delete").click(function(){
 
         $.ajax(
