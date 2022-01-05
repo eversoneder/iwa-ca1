@@ -25,7 +25,7 @@ function append(){
         async: false,
         success: setTimeout(draw_table, 1000)
     });
-};
+}
 
 function select_row(){
     $("#menuTable tbody tr[id]").click(function(){
@@ -54,7 +54,7 @@ function delete_row(section, entry){
             }
         )
     })
-};
+}
 
 $(document).ready(function(){
     draw_table();
