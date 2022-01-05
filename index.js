@@ -83,8 +83,8 @@ router.post('/post/delete', function(req, res){
 
         XMLtoJSON('PaddysCafe.xml', function(err, result){
             if(err) throw(err);
-
-            delete result.menu.section[obj.sec].entry[obj.entry];
+            
+            delete result.menu.section[obj.section].entry[obj.entry];
 
             JSONtoXML('PaddysCafe.xml', result, function(err){
                 if (err) throw (err);
