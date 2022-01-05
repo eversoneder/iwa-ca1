@@ -51,7 +51,7 @@ function delete_row(section, entry){
                 success: setTimeout(draw_table, 1000)
             }
         )
-    })
+    });
 }
 
 $(document).ready(function(){
