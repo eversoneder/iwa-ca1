@@ -48,7 +48,7 @@ function delete_row(section, entry){
                 contentType: 'application/json',
                 data: '{"sec": "' + sec + '", "ent": "' + ent + '"}',
                 cache: false,
-                success: setTimeout(draw_Table, 1000)
+                success: setTimeout(draw_table, 1000)
             }
         )
     })
